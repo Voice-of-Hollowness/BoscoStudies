@@ -7,17 +7,6 @@
 # d=c
 # print(a,b,d)
 
-# name=input("Введіть свое ім'я:\n")
-# year=int(input("Введіть скільки ваш рік народження(числом):\n"))
-# city=input("Введіть місто/село де ви найдовше жили:\n")
-# age=2022-year
-# print("\n Привіт ,",name," ,з міста ",city,".\n Чув тобі є ",age," років.",sep="")
-
-# kVatts=int(input("Введіть скільки ви потратили елктроенергії в кіловатах. (числом):\n"))
-# taryf=float(input("\n Введіть скільки коштує вам ваш тариф грн на кіловат. (одне число):\n"))
-# print("\n Ви винні нам ",kVatts*taryf," гривень. Сплатіть до кінця місяця)))",sep="")
-
-# print("\n|||||||||||||||||||||||||||\n||||||||НОВА ЗАДАЧА||||||||\n|||||||||||||||||||||||||||\n")
 
 # m1,m2=map(float,input("Введіть довжину та ширину своєї кімнати. (два числа розділених одним пробілом):\n").split(' '))
 # priceCategory=int(input("\n Введіть в яку ціну ви шукаєте килим. (одне число котре є ціною за квадратний метр):\n"))
@@ -36,77 +25,16 @@
 # print("{:^05}".format("cat"))
 # print(end="")
 
-# buget=float(input("Введіть свій бюджет на місяць:\n"))
-# ho=float(input("Введіть свої витрати на хату на місяць(процент)\n"))
-# fu = float(input("Введіть свої витрати на розваги на місяць(процент)\n"))
-# fun = (fu/100)*buget
-# house=(ho/100)*buget
-# nakop=(buget-(house+fun))*12
-# print("\n Ви витратили на розваги {0} ,\n на житлові розтрати - {2},\n ваш залишок = {1},\n з таким залишком за рік ваші накопичення становитимуть {3}".format(fun,buget-(house+fun),house, nakop ))
-
-# buget=float(input("Введіть свій бюджет :\n"))
-# thing1,thing2=map(float,input("Введіть ціни двох товарів. (два числа розділених одним пробілом):\n").split(' '))
-# if ((thing1+thing2)<buget):
-#     print("Чек сплачено")
-# elif((thing1+thing2)==buget):
-#     print("Чек сплачено без здачі, а ви круті")
-# else:
-#     print("Сума недостатня")
 
 #__________________________Урок3_______________14.09.2022______
-
-# v = float(input("Введіть швидкість:\n"))
-# count = 0
-# while(v>0):
-#     count += 1
-#     v-=8
-#     if(v<=0):
-#         v-=v
-#         print("\n Ви зупинились на", count,"секунді.")
-#         break
-#     print("\n На {0} секунді ваша швидкість становить  {1} км/год".format(count,v))
-
 
 
 #continue - exit iteration of cycle
 #break - exit cycle itself
 #else - can be part of cycle itself
 
-# a = int(input("Введіть ціле число:\n"))
-# if(a<0):
-#     a=a-2
-# elif(a==0):
-#     a=10
-# else:
-#     a+=1
-# print("\n Результат операції =", a)
-# b = int(input("Введіть друге ціле число:\n"))
-# if(a!=b):
-#     a,b=a+b,a+b
-# else:
-#     a=0
-#     b=0
-# print("\n Тепер вони абсолютно рівні як а=", a,"так і b=",b)
 
 #logical (and,or)
-# i=0
-# str1=''
-# while (i!=100):
-#     i+=1
-#     str1+= str(i)+".Charon. "
-# print(str1)
-
-# speedDecrease= 0.1
-# metersTR= 100.0
-# minutes=0
-# batiskafCD=10.0
-# while(batiskafCD < metersTR):
-#     minutes+=1
-#     print("\n Батискаф спустився на глибину {}, за {} хв".format(batiskafCD,minutes))
-#     batiskafCD = batiskafCD + (batiskafCD-(batiskafCD *speedDecrease))
-# else:
-#     minutes+=1
-#     print("Вітаю ви спустились на визначену глибину за",minutes,"хвилин.")
 
 
 #________________Урок4______________20.09.2022
@@ -131,61 +59,6 @@
 #pip install -U pip (PACKET)
 #pip uninstall (PACKET)
 
-# from math import pi,sqrt
-# c=True
-# while c:
-#     a=input("Choose a option: 1, 2 ,3 \n")
-#     if(a=="1"):
-#             katet1,katet2=map(float,input("Input katets (via space)\n".split(" ")))
-#             gipotenuza = pow(katet1,2) + pow(katet2,2)
-#             print ("\n gipotenusa ={}".format(sqrt(gipotenuza)))
-#     elif(a=="2"):
-#             side1,side2=map(float,input("Input 2 sides of pryamokutnyk (via space)\n".split(" ")))
-#             S=side1*side2
-#             print ("\n Ploshcha ={}".format(S))
-#     elif(a=="3"):
-#             radius = float(input("Input radius"))
-#             krugS = pi*pow(radius,2)
-#             print ("\n Ploshcha kruga ={}".format(krugS))
-#     else:
-#         print ("wrong option\n")
-#         continue
-#     while True:
-#         b = input("\n Do you want to continue (Y/N)\n")
-#         if(b=="Y" or b=="y"):
-#             break
-#         elif(b=="n" or b=="N"):
-#             c=False
-#             break
-#         else:
-#             print ("wrong option\n")
-#             continue
-
-
-# pools=int(input("Input number of pools you want to swim\n")) 
-# extr=int(input("Input which pool be extreme 0ne\n"))
-# i=0
-# while (i<pools):
-#     i=i+1
-#     if i==4:
-#         continue
-#     print("You swimed",i,"pools")
-#     if i==extr:
-#         print("it`s the fire in the building\n")
-#         while True:
-#             b = input("Do you want to continue swiming (Y/N)\n")
-#             if(b=="Y" or b=="y"):
-#                 print("You died\n")
-#                 break
-#             elif(b=="n" or b=="N"):
-                
-#                 break
-#             else:
-#                 print ("wrong option\n")
-#                 continue
-#         break
-# else:
-    # print(" You swimed your pools, and go to the bath")
     
 #__________________________Урок5_______________21.09.2022______
 
@@ -204,34 +77,7 @@
 # globals(optional) - словник функцій
 # locals (optional) 
 
-#import random as r
-
-# a=1 
-# times=r.randrange(1,7,2)
-# print("We play",times,"rounds")
-# wincount=0
-
-# while a<=times:
-#     while True:
-#         hotChoice=int(input("Heads or tails?( write 1 or 2 respectively)\n")) 
-#         if (hotChoice!=1 and hotChoice!=2):
-#             print("are you an idiot?\n Choose again")
-#             continue
-#         break
-#     HOT=r.randint(1,2)
-#     if (HOT == hotChoice):
-#         wincount= wincount+1
-#         print("You won this round")
-#     else:
-#         print("You lost this round")
-#     a =a+1
-
-
-# if (wincount>times/2):
-#     print("You win congrats")
-# else:
-#     print("You are pathetic loser")
-    
+ 
 #__________________________Урок6_______________22.09.2022______
 
 #конкатенація
