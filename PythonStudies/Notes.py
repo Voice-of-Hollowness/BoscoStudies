@@ -344,3 +344,32 @@
 #         flag=False
 #     else:
 #         print("Oops")
+
+
+#__________________________Урок12_______________18.10.2022______
+# def smth (some x`s)
+#return s
+
+#__________________________Урок13_______________19.10.2022______
+
+# try
+# except
+# finaly
+# else
+
+#____Файли____
+# open()
+
+# write()
+
+# close()
+# open with()as
+# w
+# a
+# r
+# 
+
+# read()
+# readline()
+# readkines()
+# 
