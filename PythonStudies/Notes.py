@@ -373,3 +373,154 @@
 # readline()
 # readkines()
 # 
+# ______ Базові значення _____
+# values={"USD":30, "UAH":10,"EURO":40}
+# uValyuta= "UAH"
+
+
+
+# # _______ Основна функція котра виводить всі данні ______ 
+
+# def kantor(x):
+#     #_________Вивід курсів валют___________
+#     if x==1:
+#         print("USD|||{}\nUAH|||{}\nEURO||{}\n".format(values["USD"],values["UAH"],values["EURO"]))
+#     #________Обмін валюти____________
+#     elif x==2:
+#         flag=1
+#         while flag:
+#             ch=input("Оберіть валюту в яку будете переводити\n")
+#             if ch.upper() == "USD" or ch.upper() == "UAH" or ch.upper() == "EURO":
+#                 if ch.upper()!= uValyuta:
+#                     suma=input("Оберіть суму яку будете переводити\n")
+#                     if suma.isdigit() != 1:
+#                         print("Ви ввели щось не правильно ")
+#                         continue
+#                     perevid(int(suma),uValyuta,values[ch.upper()],ch.upper())
+#                     flag = 0
+#                 elif ch.upper() == uValyuta:
+#                     print("Оберіть iншу валюту ") 
+#             else:
+#                 print("Ви ввели щось не правильно")
+#                 continue
+#     #_________Зміна курсу однієї з валют3___________
+#     elif x==3:
+#         flag=1
+#         while flag:
+#             ch=input("Оберіть валюту в якій будете змінювати курс\n")
+#             if ch.upper() == "USD" or ch.upper() == "UAH" or ch.upper() == "EURO":
+#                 suma=input("Оберіть суму на яку будете змінювати\n")
+#                 if suma.isdigit() != 1:
+#                     print("Ви ввели щось не правильно спробуйте пізніше")
+#                     flag =0 
+#                     continue
+#                 values[ch.upper()]=int(suma)
+#                 print (ch.upper(),"||",values[ch.upper()],sep='')
+#                 flag =0 
+#             else: 
+#                 print("Ви ввели щось не правильно спробуйте пізніше")
+#                 flag =0 
+#                 continue
+#     #_________Зміна власної валюти___________
+#     elif x ==4:
+#             ch = input(f" Ваша валюта зараз {uValyuta} введіть іншу для зміни або (Quit\q) для виходу\n")
+#             if ch.upper() == "USD" or ch.upper() == "UAH" or ch.upper() == "EURO":
+#                 uValyuta = ch.upper()
+#             else:
+#                 print("Дякую")
+#     #________Випадок не продуманої команди____________
+#     else:
+#         print("Ви ввели не правильну команду")
+
+
+# # _____ Маленька допоміжна ф-ція____
+# def perevid(a,c,d,c1):
+#     print(f"Вітаємо!\nВи перевели{a} {c} в {a/d} {c1}")                
+            
+
+# #_________Прапорці для основної програм и___________
+# tut = True
+# first = True
+
+
+# #_________Основна програм а___________
+# while tut:
+#     if first:
+
+#         choice=input("Ви бажаєте почати? (так(Y)\ні(n))\n")
+
+#         if choice.lower()=="так" or choice.lower()=="y" or choice.lower()=="yes":
+#             first = False
+
+#         elif choice.lower() =="ні" or choice.lower()=="n" or choice.lower()=="no":
+#             first = False
+#             tut = False
+#             continue
+
+#         else:
+#             print("Ви ввели щось не правильно")
+#             continue
+
+#     print(f"Ваша валюта {uValyuta}")
+
+#     choice=input("Виберіть операцію.\n1.Вивід курсів валют\n2.Обмін валюти\n3.Зміна курсу певної валюти\n4.Зміна власної валюти\n\n")
+#     if choice.isdigit()!=1:
+#         print("Ви ввели щось не правильно")
+#         continue
+#     kantor(int(choice))
+#     choice=input("При бажанні вийти введіть (Quit\q)\n")
+#     if choice.lower() == "quit" or choice.lower() == "q":
+#         tut = False
+
+#___________________________________________________________________________________
+
+# arr =  list(map(int,input("Give me some numbs\n") .split(","))) 
+# persheVidjemne=0
+# persheVidjemne1=-1
+# firstInRange=0 
+# firstInRange1=-1
+# i=0
+# while i<len(arr):
+#     if(arr[i]<0 and persheVidjemne1==-1):
+#         persheVidjemne=arr[i]
+#         persheVidjemne1=i+1
+#     if(arr[i] in range(-10,10) and firstInRange1==-1):
+#         firstInRange=arr[i] 
+#         firstInRange1=i+1
+#     i+=1
+
+# if(persheVidjemne1==-1):
+#     print("Huynya")
+# else:
+#     print(f"{persheVidjemne1}  {persheVidjemne}")
+# if(firstInRange1==-1):
+#     print("Huynya2")
+# else:
+#     print(f"{firstInRange1}  {firstInRange}")
+
+#____________________________________________________________________________
+# arr =  list(map(int,input("Give me some numbs\n") .split(","))) 
+# persheBilshe100=0
+# persheBilshe100a=-1
+# lastInRange=0 
+# lastInRange1=-1
+# i=0
+# while i<len(arr):
+#     if(arr[i]<0 and persheBilshe100a==-1):
+#         persheBilshe100=arr[i]
+#         persheBilshe100a=i+1
+#     if(arr[i] in range(5,15)):
+#         lastInRange=arr[i] 
+#         lastInRange=i+1
+#     i+=1
+
+# if(persheBilshe100a==-1):
+#     print("Huynya")
+# else:
+#     print(f"{persheBilshe100a}  {persheBilshe100a}")
+# if(lastInRange1==-1):
+#     print("Huynya2")
+# else:
+#     print(f"{lastInRange1}  {lastInRange}")
+
+#___________________________________________________________

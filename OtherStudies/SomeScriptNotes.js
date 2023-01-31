@@ -71,3 +71,51 @@ button.onclick = function(){
 button2.onclick = function(){
     document.querySelector("#test").innerHTML=html;
 }*/
+
+
+/*let button = document.querySelector("#calc");
+let a = document.querySelector("#a").value;
+let b = document.querySelector("#b").value;
+let c = document.querySelector("#c").value;
+let x = document.querySelector("#x").value;
+let y;
+button.onclick = function(){
+y=(a**2-b*x)/(a**2+c*x);
+document.querySelector("#test").innerHTML= "y="+y ;
+}
+;*/
+
+// const binnumb="11111111";
+// let i = binnumb.length;
+// let numb1 = 0;
+// console.log(i);
+// while (i!= 0){
+//     numb1 += binnumb[i-1]*(2**i);
+//     --i;
+//     console.log(numb1);
+// }
+// if (binnumb[0]=="1"){numb1 +=1}
+// console.log(numb1);
+
+/*
+let button = document.querySelector("#calc");
+button.onclick = function(){
+    let a1 = +document.querySelector("#a").value;
+    let b = 1;
+    if(isNaN(a1)){
+        document.querySelector("#result").innerHTML = "Введіть число";
+    }
+    else if(a1<=0){
+        document.querySelector("#result").innerHTML = "Введіть додатнє число";
+    }
+    else if(a1%2==0){
+        for(let i = 1; i<=a1; i++){
+            b*=i;
+        }
+        document.querySelector("#result").innerHTML = b;
+    }
+    else{
+        b=a1**a1;
+        document.querySelector("#result").innerHTML = b;
+    }
+}*/
